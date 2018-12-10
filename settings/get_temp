@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sensors | grep '°C' | tail -n1 | cut -d"+" -f2 | rev | cut -c 6- | rev
